@@ -46,17 +46,17 @@
   border-radius: 50%;
   cursor: pointer;
   align-items: center;
-  /* transition: transform ease-in 0.55s;
-  opacity: 60%;
-  transition: 0.55s opacity; */
-z-index: 100;
+  
+  transition: transform ease-in 0.55s;
+  opacity: 0.6;
+  transition: 0.55s opacity;
 
   border: none;
 }
 .react_btn-slide:hover {
   background: white;
 
-  opacity: 90%;
+  opacity: 0.9;
   transform: scale(1.1);
 }
 
@@ -98,12 +98,12 @@ z-index: 100;
   margin-right: 5px;
   border-radius: 50%;
   background: white;
-  opacity: 50%;
+  opacity: 0.5;
 }
 .react_dot.active {
   width: 8px;
   height: 8px;
-  opacity: 100%;
+  opacity: 1;
 }
 
 @media (max-width: 850px) {
