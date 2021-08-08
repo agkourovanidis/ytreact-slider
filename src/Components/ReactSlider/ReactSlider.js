@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ReactSlider.css";
-import BtnSlider from "./BtnSlider";
+import ReactBtnSlider from "./ReactBtnSlider";
 // import dataSlider from "./dataSlider";
 
 export default function ReactSlider(props) {
@@ -27,11 +27,11 @@ export default function ReactSlider(props) {
   };
 
   return (
-    <div className="container-slider">
+    <div className="react_container-slider">
       {props.slides.map((slideImage, index) => (
         <div
           key={index}
-          className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
+          className={slideIndex === index + 1 ? "react_slide active-anim" : "react_slide"}
         >
           <img
             //   src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`}
@@ -42,17 +42,17 @@ export default function ReactSlider(props) {
       ))}
 
       {/* <div className="showme"> */}
-        <BtnSlider moveSlide={nextSlide} direction={"next"} />
-        <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+        <ReactBtnSlider moveSlide={nextSlide} direction={"react_next"} />
+        <ReactBtnSlider moveSlide={prevSlide} direction={"react_prev"} />
 
-        <div className="container-dots">
+        <div className="react_container-dots">
           {/* {Array.from({ length: 5 }).map((item, index) => ( */}
           {Array.from({ length: props.slides.length }).map((item, index) => (
             <div
               //// my
               key={index}
               onClick={() => moveDot(index + 1)}
-              className={slideIndex === index + 1 ? "dot active" : "dot"}
+              className={slideIndex === index + 1 ? "react_dot active" : "react_dot"}
             ></div>
           ))}
         </div>

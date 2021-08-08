@@ -5,14 +5,14 @@ import "./ReactSlider.css";
 import leftArrow from '../../img/left-arrow.svg'
 import rightArrow from '../../img/right-arrow.svg'
 
-export default function BtnSlider({ direction, moveSlide }) {
+export default function ReactBtnSlider({ direction, moveSlide }) {
   // console.log(direction, moveSlide);
   return (
     <button
       onClick={moveSlide}
-      className={direction === "next" ? "btn-slide next" : "btn-slide prev"}
+      className={direction === "react_next" ? "react_btn-slide react_next" : "react_btn-slide react_prev"}
     >
-      <img src={direction === "next" ? rightArrow : leftArrow} alt=''/>
+      <img src={direction === "react_next" ? rightArrow : leftArrow} alt=''/>
     </button>
   );
 }

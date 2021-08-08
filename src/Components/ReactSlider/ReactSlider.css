@@ -1,4 +1,4 @@
-.container-slider {
+.react_container-slider {
   position: relative;
   height: 190px;
   width: 300px;
@@ -6,16 +6,15 @@
   overflow: hidden;
 
   border-radius: 10px;
-
 }
-.slide {
+.react_slide {
   width: 100%;
   height: 100%;
   position: absolute;
   opacity: 0;
   transition: opacity ease-in-out 0.8s;
 }
-.slide img {
+.react_slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -29,14 +28,14 @@
   visibility: hidden;
   transition: 0.55s opacity, 0.55s visibility;
 }
-.container-slider:hover .showme {
+.react_container-slider:hover .showme {
   opacity: 1;
   visibility: visible;
   
   /* z-index: 100; */
 }
 
-.btn-slide {
+.react_btn-slide {
   display: flex;
   position: absolute;
   top: 45%;
@@ -49,40 +48,41 @@
   align-items: center;
   transition: transform ease-in 0.55s;
   opacity: 60%;
-  transition: .55s opacity;
+  transition: 0.55s opacity;
 
-border: none;
+  border: none;
 }
-.btn-slide:hover {
+.react_btn-slide:hover {
   background: white;
 
   opacity: 90%;
   transform: scale(1.1);
 }
 
-.btn-slide img {
+.react_btn-slide img {
   width: 15px;
   height: 15px;
 }
-.btn-slide img:hover {
+/* .react_btn-slide img:hover {
   outline: 0;
-}
+} */
 
-.prev {
+.react_prev {
   left: 10px;
 }
-.prev img{
+.react_prev img{
   transform: translateX(-1px);
 }
 
-.next {
+.react_next {
   right: 10px;
 }
-.next img{
+.react_next img{
   transform: translateX(1px);
 }
 
-.container-dots {
+
+.react_container-dots {
   position: absolute;
   bottom: 15px;
   width: 100%;
@@ -90,7 +90,7 @@ border: none;
   align-items: center;
   justify-content: center;
 }
-.dot {
+.react_dot {
   width: 5px;
   height: 5px;
   cursor: pointer;
@@ -99,49 +99,49 @@ border: none;
   background: white;
   opacity: 50%;
 }
-.dot.active {
+.react_dot.active {
   width: 8px;
   height: 8px;
   opacity: 100%;
 }
 
 @media (max-width: 850px) {
-  .container-slider {
+  .react_container-slider {
     width: 400px;
     height: 220px;
   }
 
   
-  .btn-slide {
+  .react_btn-slide {
     top: 42%;
     height: 30px;
     width: 30px;
   }
   
-  .btn-slide img {
+  .react_btn-slide img {
     width: 20px;
     height: 20px;
   }
   
-  .prev {
+  .react_prev {
     left: 15px;
   }
-  .prev img{
+  .react_prev img{
     transform: translateX(-2px);
   }
   
-  .next {
+  .react_next {
     right: 15px;
   }
-  .next img{
+  .react_next img{
     transform: translateX(2px);
   }
   
-  .dot {
+  .react_dot {
     width: 7px;
     height: 7px;
   }
-  .dot.active {
+  .react_dot.active {
     width: 9px;
     height: 9px;
   }
