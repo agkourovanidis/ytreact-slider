@@ -41,7 +41,7 @@ export default function ReactSlider(props) {
         </div>
       ))}
 
-      <div className="showme">
+      {/* <div className="showme"> */}
         <BtnSlider moveSlide={nextSlide} direction={"next"} />
         <BtnSlider moveSlide={prevSlide} direction={"prev"} />
 
@@ -56,7 +56,7 @@ export default function ReactSlider(props) {
             ></div>
           ))}
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

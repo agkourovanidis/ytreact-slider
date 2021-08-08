@@ -1,16 +1,49 @@
-*, ::before, ::after {
+/* *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 body {
-  font-family: Open sans, sans-serif;
-  height: 100vh;
-  background: #f1f1f1;
-  overflow: hidden;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.App {
+  justify-content: center;
+}
+
+button {
+  color: #fff;
+  background-color: #39566b;
+  border-color: #39566b;
+
+  /* width: 110px; */
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: medium;
+  margin: 5px;
+}
+button:hover,
+button:focus,
+button:active,
+button.active,
+.open > .dropdown-toggle.btn-search {
+  color: #fff;
+  background-color: #253a49;
+  border-color: #253a49;
+}
 /* .App {
   text-align: center;
 }
