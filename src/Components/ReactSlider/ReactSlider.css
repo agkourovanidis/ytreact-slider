@@ -46,9 +46,10 @@
   border-radius: 50%;
   cursor: pointer;
   align-items: center;
-  transition: transform ease-in 0.55s;
+  /* transition: transform ease-in 0.55s;
   opacity: 60%;
-  transition: 0.55s opacity;
+  transition: 0.55s opacity; */
+z-index: 100;
 
   border: none;
 }
